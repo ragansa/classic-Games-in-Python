@@ -132,7 +132,7 @@ class Paddle(object):
     def move(self, direction, isPressed):
         if isPressed == True:
             self.moving = direction
-        else:
+        elif isPressed == False and self.moving == direction:
             self.moving = 0
     
     def onTick(self, dt):
