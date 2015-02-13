@@ -34,6 +34,9 @@ class World(object):
         for paddle in self.listOfPaddles:
             paddle.onTick(dt)
         self.ball.onTick(self.speed, dt)
+        self.checkCollisions()
+        
+    def checkCollisions(self):
 
         rPaddle = self.listOfPaddles[1]
         lPaddle = self.listOfPaddles[0]
