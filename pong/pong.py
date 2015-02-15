@@ -79,7 +79,7 @@ class World(object):
         pyglet.text.Label(str(self.score2), font_size=14, x = WINDOW_X - 30, y = 20).draw()
         
     def keyPress(self, symbol, isPressed):
-        # use isPress? to toggle keyup and key down so we can have 
+        # use isPressed to toggle keyup and key down so we can have 
         # smooth movement
         if symbol == pyglet.window.key.Q:
             self.listOfPaddles[0].move(1, isPressed)
